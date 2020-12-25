@@ -1,0 +1,8 @@
+<launch>
+	<rosparam file="$(find five_axis_tracking)/config/five_axis_tracking.yaml"/>
+
+	<node pkg="five_axis_tracking"
+          type="five_axis_tracking_node"
+          name="five_axis_tracking" output="screen" clear_params="true"
+          required="true"/>
+</launch>
